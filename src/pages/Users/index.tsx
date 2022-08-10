@@ -2,7 +2,7 @@ import React from 'react'
 import { Box } from '@chakra-ui/react'
 
 const Users = () => {
-  return(
+  return (
     <Box>
       User list
     </Box>

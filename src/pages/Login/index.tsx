@@ -5,15 +5,15 @@ import { Box } from '@chakra-ui/react'
 import { Text } from 'src/components/Text';
 
 const Login = () => {
-  return(
+  return (
     <Box>
       <Text
-        size = 'large'
-        variant = 'normal'
+        size="large"
+        variant="normal"
         letterSpacing="1px"
         w="100%"
         marginRight="30px"
-        value={'Login'}
+        value="Login"
       />
     </Box>
   )
