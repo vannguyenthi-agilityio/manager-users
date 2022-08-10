@@ -2,7 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  distDir: 'build'
+  distDir: 'build',
+  "pagesDir": './src/pages'
 }
 
 module.exports = nextConfig
