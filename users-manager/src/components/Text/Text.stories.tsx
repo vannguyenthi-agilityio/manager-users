@@ -14,13 +14,15 @@ const Template: Storybook.ComponentStory<typeof Text> = args => (
 export const LargeText = Template.bind({});
 LargeText.args = {
   size: 'large',
-  variant: 'normal'
+  variant: 'normal',
+  value: 'hi'
 };
 
 export const MediumText = Template.bind({});
 MediumText.args = {
   size: 'medium',
-  variant: 'normal'
+  variant: 'normal',
+  value: 'hello'
 };
 
 export const DefaultText = Template.bind({});

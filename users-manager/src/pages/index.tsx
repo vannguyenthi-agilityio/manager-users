@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
-import Login from 'src/pages/Login/index'
+import Login from '../pages/login'
 
 const Home: NextPage = () => {
-  return <Login />
+	return <Login />
 }
 
 export default Home
