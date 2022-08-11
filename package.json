@@ -68,9 +68,9 @@
     "webpack": "4.44.0"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port $PORT",
     "build": "next build && next export",
-    "start": "next start -p 9000",
+    "start": "node_modules/next/dist/bin/next start -p $PORT",
     "storybook": "start-storybook -p 6006 -s public",
     "pre-push": "rm -rf storybook-static/ && build-storybook -s public",
     "build-storybook": "build-storybook -s public",
