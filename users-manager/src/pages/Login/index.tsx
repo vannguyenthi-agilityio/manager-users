@@ -10,10 +10,10 @@ import {
 } from '@chakra-ui/react'
 
 // Components
-import { Text }  from '../components/Text'
+import { Text }  from '../../components/Text'
 
 // Constants
-import { PATTERN } from '../constants/pattern'
+import { PATTERN } from '../../constants/pattern'
 
 interface IFormInputs {
   email: string
