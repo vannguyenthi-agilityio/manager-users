@@ -11,7 +11,7 @@ import { getUsers } from '../../service/user-service'
 // Components
 import { Text }  from '../../components/Text'
 import BasicTable from '../../components/Table'
-import Indicator from '../../components/Indicator'
+import { Indicator } from '../../components/Indicator'
 import { User } from '../../models/user'
 import { columnsUsers } from '../../constants/tableColumn'
 import { ROUTES } from '../../constants/routes'

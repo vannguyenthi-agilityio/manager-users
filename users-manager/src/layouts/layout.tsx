@@ -7,7 +7,9 @@ type TypeProp = {
   children?: React.ReactNode
 }
 
-const Layout: React.FC<TypeProp> = ({ children }) => {
+export const Layout = ({
+  children
+}: TypeProp) => {
   const { query } = useRouter()
   return (
     <Grid
@@ -25,5 +27,3 @@ const Layout: React.FC<TypeProp> = ({ children }) => {
     </Grid>
   )
 }
-
-export default Layout
