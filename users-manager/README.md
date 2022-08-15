@@ -67,3 +67,12 @@ pnpm storybook
 ```
 
 Open http://localhost:6006/ in browser
+
+
+- Run data json
+
+```
+pnpm server-start or  pnpm json-server --watch datas/db.json  --port 3001
+```
+
+Open http://localhost:3001/ in browser

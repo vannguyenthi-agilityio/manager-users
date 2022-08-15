@@ -1,11 +1,22 @@
-import { ChakraProvider } from "@chakra-ui/react"
-import '../styles/globals.css'
+import type { AppProps } from 'next/app'
+import { ChakraProvider } from '@chakra-ui/react'
+import Layout from '../layouts/layout'
+import { Hydrate, QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { CHAKRA_THEME } from '../themes/chakra'
 
-function App({ Component, pageProps }) {
-  return <ChakraProvider theme={CHAKRA_THEME}>
-    <Component {...pageProps} />
-  </ChakraProvider>
+function App({ Component, pageProps }: AppProps) {
+  const clientQuery = new QueryClient()
+  return (
+    <QueryClientProvider client={clientQuery}>
+      <Hydrate state={pageProps.dehydratedState}>
+        <ChakraProvider  theme={CHAKRA_THEME}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </ChakraProvider>
+      </Hydrate>
+    </QueryClientProvider>
+  )
 }
 
 export default App
