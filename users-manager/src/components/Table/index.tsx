@@ -26,7 +26,7 @@ const BasicTable: React.FC<TableType> = ({ data, columns, variant }) => {
         </Thead>
         <Tbody>
           {data.map((item) => (
-            <Tr key={item.key}>
+            <Tr key={Number(item.id)} >
               {columns.map((column) => (
                 <Td key={column.header}>{item[column.accessor]}</Td>
               ))}
