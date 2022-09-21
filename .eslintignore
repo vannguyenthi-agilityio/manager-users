@@ -1,3 +1,10 @@
-src\types
-src/types
-test/*
+src\models
+src/models
+src/env.d.ts
+src\env.d.ts
+commitlint.config.js
+package.json
+public/mockServiceWorker.js
+public\mockServiceWorker.js
+src/mocks
+src\mocks

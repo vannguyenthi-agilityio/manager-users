@@ -1,7 +1,8 @@
 export const ROUTES = {
   HOME: '/',
-  HOME_PAGE: '/dashboard',
+  REFERRAL: '/referral',
   LOGIN: '/login',
+  COMMUNITY: '/community',
+  ABOUT_US: '/about',
   NOT_FOUND: '/404',
-  USERS: '/users'
 };

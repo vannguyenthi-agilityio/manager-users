@@ -1,0 +1,69 @@
+---
+import Button from 'components:Button/index';
+import Heading from 'components:Heading/index';
+import './styles.css';
+
+export interface CardInfoProps {
+  className?: string;
+  imageUrl?: object;
+  imageAlt?: string;
+  imageSize?: object;
+  heading?: string;
+  isReversed?: boolean;
+}
+
+const {
+  className = '',
+  imageUrl = {
+    mobile: '',
+    tablet: '',
+    desktop: '',
+  },
+  imageWidth = {
+    mobile: '',
+    tablet: '',
+    desktop: '',
+  },
+  heading = '',
+  imageAlt = heading,
+  isReversed = false,
+} = Astro.props;
+---
+
+<div class={`card-info ${isReversed ? 'card-info-reverse' : ''} ${className}`}>
+  <picture class="text-center card-image">
+    {
+      imageUrl.tablet && (
+        <source
+          media="(min-width: 768px)"
+          srcset={imageUrl.tablet}
+          width={imageWidth.tablet}
+          height="100%"
+        />
+      )
+    }
+    {
+      imageUrl.desktop && (
+        <source
+          media="(min-width: 1200px)"
+          srcset={imageUrl.desktop}
+          width={imageWidth.desktop}
+          height="100%"
+        />
+      )
+    }
+    <img
+      src={imageUrl.mobile}
+      alt={imageAlt}
+      width={imageWidth.mobile}
+      height="100%"
+    />
+  </picture>
+  <div class="card-info-content">
+    <Heading size="sm" className="card-info-heading">{heading}</Heading>
+    <slot />
+    <Button className="card-info-button" onclick="window.scrollTo(0, 0)"
+      >Sign Up
+    </Button>
+  </div>
+</div>
