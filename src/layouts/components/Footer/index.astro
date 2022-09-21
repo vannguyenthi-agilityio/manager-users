@@ -7,9 +7,78 @@ import './styles.css';
 ---
 
 <footer class="footer">
+  <div class="container">
+    <div class="d-flex footer-content">
+      <nav class="d-flex footer-navbar">
+        <a class="footer-logo" href="#">DogeCard</a>
+        <ul class="d-flex footer-nav-list">
+          <li class="footer-nav-item"><a href="#">Help & Support</a></li>
+          <li class="footer-nav-item"><a href="#">Legal</a></li>
+          <li class="footer-nav-item">
+            <a href="#">Terms of Service</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="d-flex footer-info">
+        <p class="footer-description">
+          DogeCard is not a bank. Evolve Bank and Trust, Member FDIC, provides
+          banking services and issues the DogeCard Credit card.
+        </p>
+        <p class="footer-description">
+          * You will earn Doge with each qualifying purchase on your DogeCard
+          Card. Doge “rewards” are credited to you in accordance with our
+          <a class="footer-description-link" href="#">Rewards Terms</a>.
+          Qualifying Purchases do not include any other payment or transfer,
+          including incoming transactions, outgoing transactions where you are
+          the receiving party, peer to peer transactions, ACH Transactions, ATM
+          transactions, fees, chargebacks, adjustments, or wire transfers.
+          Dogecoin involves certain risks. For more information, see the
+          <a class="footer-description-link" href="#"> Rewards Terms</a>.
+        </p>
+        <p class="footer-description">
+          Early access to direct deposit funds depends on the timing of the
+          submission of the payment file from the payer. We generally make these
+          funds available on the day the payment file is received, which may be
+          up to 2 days earlier than the scheduled payment date.
+        </p>
+      </div>
+    </div>
+    <address class="d-flex footer-contact">
+      <p class="d-flex footer-content-item">
+        <img
+          class="contact-icon"
+          src="assets/images/icons/phone.svg"
+          alt="DogeCard phone number"
+          width="18"
+          height="18"
+        />
+        <a href="tel:8552179378">(855) 217-9378</a>
+      </p>
+      <div class="d-flex footer-content-item">
+        <img
+          class="contact-icon"
+          src="assets/images/icons/calendar.svg"
+          alt="DogeCard calendar"
+          width="24"
+          height="24"
+        />
+        <p>Mon-Sun <time>9am</time>-<time>5pm</time> PT</p>
+      </div>
+    </address>
+    <DownloadButtonList className="footer-button-download" />
+  </div>
   <div class="footer-detail">
     <div class="container">
-        Footer
+      <div class="d-flex footer-detail-info">
+        <p class="d-flex footer-copyright">
+          © 2022 DogeCard. All Rights Reserved.
+        </p>
+        <div class="d-flex footer-social-icon">
+          <TwitterIcon href="#" />
+          <TikTokIcon href="#" />
+          <InstagramIcon href="#" />
+        </div>
+      </div>
     </div>
   </div>
 </footer>
