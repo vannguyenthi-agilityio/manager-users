@@ -70,9 +70,6 @@ export default function Hero() {
     <section className="d-flex-column hero">
       <div className="container">
         <div className="d-flex-column hero-content">
-          <Heading size="md" className="hero-heading" uppercase>
-            Get your DogeCard
-          </Heading>
           <p className="hero-description">In less than 5 minutes</p>
           <div
             className="hero-form"
