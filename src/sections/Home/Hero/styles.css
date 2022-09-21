@@ -102,7 +102,6 @@
 @media only screen and (min-width: 1200px) {
   .hero {
     position: relative;
-    min-height: 100vh;
   }
 
   .hero-content {

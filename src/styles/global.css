@@ -283,3 +283,7 @@ body {
     padding-right: var(--containerPaddingLg);
   }
 }
+
+main {
+  min-height: 100vh;
+}
