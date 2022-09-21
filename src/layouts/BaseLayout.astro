@@ -57,14 +57,5 @@ const { title, description, hasHeaderOverlap, showHero, showReferral } =
       var Buffer = Buffer || [];
       var process = process || { env: { DEBUG: undefined }, version: [] };
     </script>
-
-    <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      const code = urlParams.get('code');
-      if (code && code.length === 8) {
-        localStorage.setItem('referralCode', JSON.stringify(code));
-        window.location.href = '/';
-      }
-    </script>
   </body>
 </html>
