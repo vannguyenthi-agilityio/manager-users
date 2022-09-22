@@ -152,7 +152,7 @@ body {
 }
 
 main {
-  min-height: 100vh - 120px - 240px;
+  min-height: 100vh;
 }
 
 /* Common styles */
