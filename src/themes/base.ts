@@ -80,6 +80,7 @@ const THEME_BASE = {
   borderRadiusXl: '50px',
   borderRadiusRound: '50%',
   borderRadiusTiny: '8px',
+  borderRadiusNormal: '20px',
 
   // Sizes
   sizeFull: '100%',

@@ -70,9 +70,9 @@ export default function Hero() {
     <section className="d-flex-column hero">
       <div className="container">
         <div className="d-flex-column hero-content">
-          {/* <Heading size="md" className="hero-heading" uppercase>
+          <Heading size="md" className="hero-heading" uppercase>
             Get your DogeCard
-          </Heading> */}
+          </Heading>
           <p className="hero-description">In less than 5 minutes</p>
           <div
             className="hero-form"
@@ -105,7 +105,7 @@ export default function Hero() {
               />
             )}
           </div>
-          {/* <p className="hero-text-term">
+          <p className="hero-text-term">
             By tapping ‘Sign Up’, you agree to our
             <a href="#" className="text-highlight letter-spacing">
               Terms,
@@ -117,8 +117,8 @@ export default function Hero() {
             <a href="#" className="text-highlight letter-spacing">
               Privacy Policy.
             </a>
-          </p> */}
-          {/* <DownloadButtonList /> */}
+          </p>
+          <DownloadButtonList />
         </div>
       </div>
       <div className="hero-bg"></div>

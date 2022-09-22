@@ -28,11 +28,7 @@
   color: var(--colorTextAboutUs);
   font-size: var(--fontSizeSm);
   line-height: var(--lineHeightXs);
-}
-
-.about-partner-card img {
-  min-width: 200px;
-  padding: 10px;
+  opacity: 0.75;
 }
 
 @media (min-width: 768px) {
@@ -70,10 +66,6 @@
   .about-partner-card {
     max-width: 50%;
     padding: 35px 15px;
-  }
-
-  .about-partner-card img {
-    padding: 0;
   }
 
   .about-partner-card .heading {
