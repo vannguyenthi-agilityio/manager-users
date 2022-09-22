@@ -105,9 +105,10 @@ export default function Hero() {
               />
             )}
           </div>
-          <h2>
+          {/* <h2>
             By tapping ‘Sign Up’, you agree to our
-          </h2>
+          </h2> */}
+          <p className="hero-description">In less than 5 minutes</p>
           <div>
           <picture>
           <source
