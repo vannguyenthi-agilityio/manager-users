@@ -105,9 +105,9 @@ export default function Hero() {
               />
             )}
           </div>
-          <p>
+          <h2>
             By tapping ‘Sign Up’, you agree to our
-          </p>
+          </h2>
           <div>
           <picture>
           <source
