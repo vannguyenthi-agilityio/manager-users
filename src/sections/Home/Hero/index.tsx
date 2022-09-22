@@ -119,6 +119,20 @@ export default function Hero() {
             </a>
           </p>
           <div>
+          {/* <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="assets/images/icons/fdic.svg"
+            width="88px"
+            height="54px"
+          />
+          <img
+            src="assets/images/icons/fdic.svg"
+            alt="Member FDIC"
+            width="44px"
+            height="27px"
+          />
+        </picture> */}
           <img
             src="/assets/images/icons/app-store.svg"
             alt="DogeCard Apple Store"
@@ -126,11 +140,12 @@ export default function Hero() {
             height="56"
           />
           <img
-            src="/assets/images/icons/app-store.svg"
+            src="/assets/images/icons/google-play.svg"
             alt="DogeCard Apple Store"
             width="192"
             height="56"
           />
+          
           </div>
         </div>
       </div>
