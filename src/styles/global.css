@@ -151,6 +151,10 @@ body {
   background-size: cover;
 }
 
+main {
+  min-height: 100vh - 120px - 240px;
+}
+
 /* Common styles */
 .container {
   padding-left: var(--containerPaddingSm);
