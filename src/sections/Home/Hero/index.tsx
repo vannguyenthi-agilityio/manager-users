@@ -119,7 +119,7 @@ export default function Hero() {
             </a>
           </p>
           <div>
-          {/* <picture>
+          <picture>
           <source
             media="(min-width: 1200px)"
             srcset="assets/images/icons/fdic.svg"
@@ -132,8 +132,8 @@ export default function Hero() {
             width="44px"
             height="27px"
           />
-        </picture> */}
-          <img
+        </picture>
+          {/* <img
             src="/assets/images/icons/app-store.svg"
             alt="DogeCard Apple Store"
             width="192"
@@ -144,7 +144,7 @@ export default function Hero() {
             alt="DogeCard Apple Store"
             width="192"
             height="56"
-          />
+          /> */}
           
           </div>
         </div>
