@@ -118,7 +118,7 @@ export default function Hero() {
               Privacy Policy.
             </a>
           </p> */}
-          <DownloadButtonList />
+          {/* <DownloadButtonList /> */}
         </div>
       </div>
       <div className="hero-bg"></div>
