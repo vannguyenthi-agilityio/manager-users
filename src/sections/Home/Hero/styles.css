@@ -121,7 +121,7 @@
 
   .hero-text-term {
     font-size: var(--fontSizeBase);
-    max-width: 351px;
+    /* max-width: 351px; */
   }
 
   .hero-form {
