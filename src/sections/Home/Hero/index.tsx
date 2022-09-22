@@ -70,9 +70,9 @@ export default function Hero() {
     <section className="d-flex-column hero">
       <div className="container">
         <div className="d-flex-column hero-content">
-          <h2>
+          <Heading size="md" className="hero-heading" uppercase>
             Get your DogeCard
-          </h2>
+          </Heading>
           <p className="hero-description">In less than 5 minutes</p>
           <div
             className="hero-form"
@@ -105,39 +105,20 @@ export default function Hero() {
               />
             )}
           </div>
-          {/* <h2>
+          <p className="hero-text-term">
             By tapping ‘Sign Up’, you agree to our
-          </h2> */}
-          <p>In less than 5 minutes</p>
-          <div>
-          <picture>
-          <source
-            media="(min-width: 1200px)"
-            srcset="assets/images/icons/fdic.svg"
-            width="88px"
-            height="54px"
-          />
-          <img
-            src="assets/images/icons/fdic.svg"
-            alt="Member FDIC"
-            width="44px"
-            height="27px"
-          />
-        </picture>
-          {/* <img
-            src="/assets/images/icons/app-store.svg"
-            alt="DogeCard Apple Store"
-            width="192"
-            height="56"
-          />
-          <img
-            src="/assets/images/icons/google-play.svg"
-            alt="DogeCard Apple Store"
-            width="192"
-            height="56"
-          /> */}
-          
-          </div>
+            <a href="#" className="text-highlight letter-spacing">
+              Terms,
+            </a>
+            <a href="#" className="text-highlight letter-spacing">
+              E-sign Consent
+            </a>
+            and
+            <a href="#" className="text-highlight letter-spacing">
+              Privacy Policy.
+            </a>
+          </p>
+          <DownloadButtonList />
         </div>
       </div>
       <div className="hero-bg"></div>

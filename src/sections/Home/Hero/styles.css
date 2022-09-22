@@ -12,7 +12,7 @@
 }
 
 .hero-heading {
-  max-width: 265px;
+  max-width: 250px;
 }
 
 .hero-description {
@@ -121,7 +121,7 @@
 
   .hero-text-term {
     font-size: var(--fontSizeBase);
-    /* max-width: 351px; */
+    max-width: 351px;
   }
 
   .hero-form {
