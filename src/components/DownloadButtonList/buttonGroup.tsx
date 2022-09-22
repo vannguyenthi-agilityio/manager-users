@@ -9,7 +9,7 @@ export default function ButtonGroup({ className = '' }: OriginalProps) {
           <source
             media="(min-width: 768px)"
             srcset="/assets/images/icons/app-store.svg"
-            width="192"
+            width="164"
             height="100%"
           />
           <img
@@ -25,7 +25,7 @@ export default function ButtonGroup({ className = '' }: OriginalProps) {
           <source
             media="(min-width: 768px)"
             srcset="/assets/images/icons/google-play.svg"
-            width="192"
+            width="164"
             height="100%"
           />
           <img
