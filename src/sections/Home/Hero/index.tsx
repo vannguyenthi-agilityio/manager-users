@@ -105,7 +105,7 @@ export default function Hero() {
               />
             )}
           </div>
-          <p className="hero-text-term">
+          <p>
             By tapping ‘Sign Up’, you agree to our
             <a href="#" className="text-highlight letter-spacing">
               Terms,
