@@ -9,6 +9,8 @@ export default function ButtonGroup({ className = '' }: OriginalProps) {
           <img
             src="/assets/images/icons/app-store.svg"
             alt="DogeCard Apple Store"
+            width="100%"
+            height="auto"
           />
       </a>
       <a href="#" className="download-button-item">
@@ -16,6 +18,8 @@ export default function ButtonGroup({ className = '' }: OriginalProps) {
           <img
             src="/assets/images/icons/google-play.svg"
             alt="DogeCard Google Play"
+            width="100%"
+            height="auto"
           />
       </a>
     </div>
