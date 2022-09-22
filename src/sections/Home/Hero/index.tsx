@@ -118,7 +118,20 @@ export default function Hero() {
               Privacy Policy.
             </a>
           </p>
-          <DownloadButtonList />
+          <div>
+          <img
+            src="/assets/images/icons/app-store.svg"
+            alt="DogeCard Apple Store"
+            width="192"
+            height="56"
+          />
+          <img
+            src="/assets/images/icons/app-store.svg"
+            alt="DogeCard Apple Store"
+            width="192"
+            height="56"
+          />
+          </div>
         </div>
       </div>
       <div className="hero-bg"></div>
