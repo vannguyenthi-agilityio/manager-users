@@ -1,5 +1,7 @@
 ---
 import Heading from 'components:Heading/index';
+import Input from 'components:Input/index';
+import Button from 'components:Button/index';
 import './styles.css';
 ---
 
@@ -50,6 +52,22 @@ import './styles.css';
           <p>Monday - Friday</p>
         </div>
       </address>
+    </div>
+    <div class="d-flex contact-form">
+      <div class="d-flex contact-form-user">
+        <Input
+          className="contact-form-name"
+          colorScheme="dark"
+          placeholder="Name"
+        />
+        <Input
+          className="contact-form-email"
+          colorScheme="dark"
+          placeholder="Email"
+        />
+      </div>
+      <textarea placeholder="Message" class="contact-form-message"></textarea>
+      <Button className="contact-form-button">Submit</Button>
     </div>
   </div>
 </div>

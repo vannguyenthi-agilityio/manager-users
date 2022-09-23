@@ -12,10 +12,17 @@ export interface Props {
   hasHeaderOverlap?: boolean;
   showHero?: boolean;
   showReferral?: boolean;
+  showContact?: boolean;
 }
 
-const { title, description, hasHeaderOverlap, showHero, showReferral } =
-  Astro.props as Props;
+const {
+  title,
+  description,
+  hasHeaderOverlap,
+  showHero,
+  showReferral,
+  showContact,
+} = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
@@ -34,6 +41,7 @@ const { title, description, hasHeaderOverlap, showHero, showReferral } =
           client:load
           showHero={showHero}
           showReferral={showReferral}
+          showContact={showContact}
         >
           <slot />
         </HydrateProvider>

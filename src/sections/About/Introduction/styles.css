@@ -13,6 +13,7 @@
 .about-introduction-description {
   line-height: var(--lineHeightSm);
   margin-top: 20px;
+  opacity: var(--opacityBase);
 }
 
 .about-introduction-image > img {
