@@ -16,6 +16,8 @@ export default function Heading({
       className={`heading heading-${size} ${
         uppercase ? 'heading-uppercase' : ''
       } ${className}`}
-    >Hi all</h2>
+    >
+      {children}
+    </h2>
   );
 }
