@@ -71,7 +71,7 @@ export default function Hero() {
       <div className="container">
         <div className="d-flex-column hero-content">
           <Heading size="md" className="hero-heading" uppercase>
-           Hi all
+           Hi all how are
           </Heading>
           <p className="hero-description">In less than 5 minutes</p>
           <div
