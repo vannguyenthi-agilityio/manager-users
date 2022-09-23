@@ -152,6 +152,10 @@ body {
 }
 
 /* Common styles */
+.main-layout {
+  min-height: 100vh;
+}
+
 .container {
   padding-left: var(--containerPaddingSm);
   padding-right: var(--containerPaddingSm);
