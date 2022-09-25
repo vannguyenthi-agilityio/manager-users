@@ -1,6 +1,7 @@
 /* Styles for Community Introduction Section */
 .community-introduction {
   text-align: center;
+  min-height: 269px;
 }
 
 .community-content {
@@ -25,6 +26,7 @@
 
 @media (min-width: 1200px) {
   .community-introduction {
+    max-height: 443px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
