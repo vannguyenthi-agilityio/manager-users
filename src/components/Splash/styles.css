@@ -10,7 +10,7 @@
     min-height: calc(100vh - 215px - 611px);
   } */
 
-  .main-layout .splash-content {
+  .main-home .splash-content {
     padding-top: 215px;
     min-height: calc(100vh - 611px);
   }
