@@ -7,8 +7,10 @@
   margin-top: 40px;
 }
 
-.community-image > img {
-  max-width: 150px;
+.community-image > picture {
+  min-height: 150px;
+  min-width: 150px;
+  display: inline-block;
 }
 
 .community-description {
@@ -16,7 +18,7 @@
 }
 
 @media (min-width: 768px) {
-  .community-image > img {
+  .community-image > picture {
     max-width: 250px;
   }
 }
@@ -30,7 +32,7 @@
     text-align: start;
   }
 
-  .community-image > img {
+  .community-image > picture {
     max-width: 440px;
   }
 
