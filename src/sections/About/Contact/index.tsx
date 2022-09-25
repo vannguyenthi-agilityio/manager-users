@@ -110,7 +110,7 @@ export default function Contact() {
                   src="assets/images/icons/contact-phone.svg"
                   alt="DogeCard location"
                   loading="lazy"
-                  width="100%"
+                  width="40"
                   height="auto"
                 />
                 <a href="tel:14242727344">+1-424-272-7344</a>
@@ -121,7 +121,7 @@ export default function Contact() {
                   src="assets/images/icons/contact-location.svg"
                   alt="DogeCard location"
                   loading="lazy"
-                  width="100%"
+                  width="40"
                   height="auto"
                 />
                 <p>10573 West Pico Blvd. #186, Los Angeles, CA 90064-2348</p>
@@ -132,7 +132,7 @@ export default function Contact() {
                   src="assets/images/icons/contact-time.svg"
                   alt="DogeCard location"
                   loading="lazy"
-                  width="100%"
+                  width="40"
                   height="auto"
                 />
                 <p>
@@ -145,7 +145,7 @@ export default function Contact() {
                   src="assets/images/icons/contact-calendar.svg"
                   alt="DogeCard location"
                   loading="lazy"
-                  width="100%"
+                  width="40"
                   height="auto"
                 />
                 <p>Monday - Friday</p>
