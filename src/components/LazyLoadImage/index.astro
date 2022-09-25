@@ -30,8 +30,8 @@ const { imageAlt, imageUrl, imageWidth, imageHeight, className } = Astro.props a
       <source
         media="(min-width: 768px)"
         srcset={imageUrl.tablet}
-        width={imageWidth.tablet}
-        height={imageHeight?.tablet}
+        width={imageWidth? imageWidth.tablet : "100%"}
+        height={imageHeight? imageHeight.tablet : "100%"}
       />
     )
   }
@@ -40,16 +40,16 @@ const { imageAlt, imageUrl, imageWidth, imageHeight, className } = Astro.props a
       <source
         media="(min-width: 1200px)"
         srcset={imageUrl.desktop}
-        width={imageWidth.desktop}
-        height={imageHeight?.desktop}
+        width={imageWidth? imageWidth.desktop : "100%"}
+        height={imageHeight ? imageHeight.desktop : "100%"}
       />
     )
   }
   <img
     src={imageUrl.mobile}
     alt={imageAlt}
-    width={imageWidth.mobile}
-    height={imageHeight?.mobile}
+    width={imageWidth? imageWidth.mobile : "100%"}
+    height={imageHeight? imageHeight.mobile : "100%"}
     loading="lazy"
   />
 </picture>
