@@ -31,7 +31,7 @@ const { imageAlt, imageUrl, imageWidth, imageHieght, className } = Astro.props a
         media="(min-width: 768px)"
         srcset={imageUrl.tablet}
         width={imageWidth.tablet}
-        height={imageHieght.tablet}
+        height={imageHieght?.tablet}
       />
     )
   }
@@ -41,7 +41,7 @@ const { imageAlt, imageUrl, imageWidth, imageHieght, className } = Astro.props a
         media="(min-width: 1200px)"
         srcset={imageUrl.desktop}
         width={imageWidth.desktop}
-        height={imageHieght.desktop}
+        height={imageHieght?.desktop}
       />
     )
   }
@@ -49,7 +49,7 @@ const { imageAlt, imageUrl, imageWidth, imageHieght, className } = Astro.props a
     src={imageUrl.mobile}
     alt={imageAlt}
     width={imageWidth.mobile}
-    height={imageHieght.mobile}
+    height={imageHieght?.mobile}
     loading="lazy"
   />
 </picture>
