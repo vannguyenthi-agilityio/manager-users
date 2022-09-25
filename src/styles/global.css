@@ -152,7 +152,8 @@ body {
 }
 
 /* Common styles */
-.main-layout {
+.main-layout,
+.main-home {
   min-height: 100vh;
 }
 
