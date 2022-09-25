@@ -8,7 +8,7 @@ export default function ButtonGroup({ className = '' }: OriginalProps) {
         <picture>
           <source
             media="(min-width: 768px)"
-            srcset="/assets/images/icons/app-store.svg"
+            srcSet="/assets/images/icons/app-store.svg"
             width="192"
             height="100%"
           />
@@ -17,6 +17,7 @@ export default function ButtonGroup({ className = '' }: OriginalProps) {
             alt="DogeCard Apple Store"
             width="164"
             height="56"
+            loading="lazy"
           />
         </picture>
       </a>
@@ -24,7 +25,7 @@ export default function ButtonGroup({ className = '' }: OriginalProps) {
         <picture>
           <source
             media="(min-width: 768px)"
-            srcset="/assets/images/icons/google-play.svg"
+            srcSet="/assets/images/icons/google-play.svg"
             width="192"
             height="100%"
           />
@@ -33,6 +34,7 @@ export default function ButtonGroup({ className = '' }: OriginalProps) {
             alt="DogeCard Google Play"
             width="164"
             height="56"
+            loading="lazy"
           />
         </picture>
       </a>

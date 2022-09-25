@@ -1,5 +1,6 @@
 ---
 import Heading from 'components:Heading/index';
+import LazyLoadImage from 'components:LazyLoadImage/index';
 
 //styles
 import './styles.css';
@@ -35,6 +36,16 @@ export interface MemberCardProps {
 }
 
 const { data, className = '' } = Astro.props as MemberCardProps;
+
+const memberAvatar = {
+  imageAlt : data.avatarAlt,
+  imageUrl: {
+    mobile: data.avatarUrl
+  },
+  imageWidth: {
+    mobile: '100%'
+  }
+}
 ---
 
 <article class={`member-card ${className}`}>
@@ -42,7 +53,11 @@ const { data, className = '' } = Astro.props as MemberCardProps;
     <div class={`arc arc-start arc-start-${data.arcDeg.start}`}></div>
     <div class={`arc arc-end arc-end-${data.arcDeg.end}`}></div>
     <div class="member-card-image">
-      <img src={data.avatarUrl} alt={data.avatarAlt} width="100%" />
+      <LazyLoadImage
+        imageAlt={memberAvatar.imageAlt}
+        imageUrl={memberAvatar.imageUrl}
+        imageWidth={memberAvatar.imageWidth}
+      />
     </div>
   </div>
   <div class="member-card-content">

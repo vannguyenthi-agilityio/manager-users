@@ -6,9 +6,9 @@
 @media only screen and (min-width: 1200px) {
   /* Height of header is 215px, height of footer is 611px for now */
 
-  .splash-content {
+  /* .splash-content {
     min-height: calc(100vh - 215px - 611px);
-  }
+  } */
 
   .main-layout .splash-content {
     padding-top: 215px;

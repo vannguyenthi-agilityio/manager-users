@@ -2,6 +2,7 @@
 import Heading from 'components:Heading/index';
 import Input from 'components:Input/index';
 import Button from 'components:Button/index';
+import LazyLoadImage from 'components:LazyLoadImage/index';
 import './styles.css';
 ---
 
@@ -20,34 +21,50 @@ import './styles.css';
       </p>
       <address class="contact-form-info-list">
         <div class="d-flex contact-form-info-item">
-          <img
-            class="contact-form-info-icon"
-            src="assets/images/icons/contact-phone.svg"
-            alt="DogeCard location"
+          <LazyLoadImage
+            imageAlt = "DogeCard phone number"
+            imageUrl = {{
+              mobile: 'assets/images/icons/contact-phone.svg'
+            }}
+            imageWidth = {{
+              mobile: '40'
+            }}
           />
           <a href="tel:14242727344">+1-424-272-7344</a>
         </div>
         <div class="d-flex contact-form-info-item">
-          <img
-            class="contact-form-info-icon"
-            src="assets/images/icons/contact-location.svg"
-            alt="DogeCard location"
+          <LazyLoadImage
+            imageAlt = "DogeCard location"
+            imageUrl = {{
+              mobile: 'assets/images/icons/contact-location.svg'
+            }}
+            imageWidth = {{
+              mobile: '40'
+            }}
           />
           <p>10573 West Pico Blvd. #186, Los Angeles, CA 90064-2348</p>
         </div>
         <div class="d-flex contact-form-info-item">
-          <img
-            class="contact-form-info-icon"
-            src="assets/images/icons/contact-time.svg"
-            alt="DogeCard location"
+          <LazyLoadImage
+            imageAlt = "DogeCard time"
+            imageUrl = {{
+              mobile: 'assets/images/icons/contact-time.svg'
+            }}
+            imageWidth = {{
+              mobile: '40'
+            }}
           />
           <p><time>9:00</time> - <time>17:00</time></p>
         </div>
         <div class="d-flex contact-form-info-item">
-          <img
-            class="contact-form-info-icon"
-            src="assets/images/icons/contact-calendar.svg"
-            alt="DogeCard location"
+          <LazyLoadImage
+            imageAlt = "DogeCard calendar"
+            imageUrl = {{
+              mobile: 'assets/images/icons/contact-calendar.svg'
+            }}
+            imageWidth = {{
+              mobile: '40'
+            }}
           />
           <p>Monday - Friday</p>
         </div>

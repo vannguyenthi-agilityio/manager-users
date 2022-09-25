@@ -19,15 +19,14 @@ export interface ImageProps {
 const { imageAlt, imageUrl, imageWidth, className } = Astro.props as ImageProps;
 ---
 
-<picture class={`${className}`}>
+<picture class={className}>
   {
     imageUrl.tablet && (
       <source
         media="(min-width: 768px)"
         srcset={imageUrl.tablet}
         width={imageWidth.tablet}
-        height="100%"
-        loading="lazy"
+        height="auto"
       />
     )
   }
@@ -37,8 +36,7 @@ const { imageAlt, imageUrl, imageWidth, className } = Astro.props as ImageProps;
         media="(min-width: 1200px)"
         srcset={imageUrl.desktop}
         width={imageWidth.desktop}
-        height="100%"
-        loading="lazy"
+        height="auto"
       />
     )
   }
@@ -46,7 +44,7 @@ const { imageAlt, imageUrl, imageWidth, className } = Astro.props as ImageProps;
     src={imageUrl.mobile}
     alt={imageAlt}
     width={imageWidth.mobile}
-    height="100%"
+    height="auto"
     loading="lazy"
   />
 </picture>

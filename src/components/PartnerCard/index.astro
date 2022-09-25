@@ -1,5 +1,6 @@
 ---
 import Heading from 'components:Heading/index';
+import LazyLoadImage from 'components:LazyLoadImage/index';
 import './styles.css';
 
 export interface PartnerCardProps {
@@ -7,7 +8,6 @@ export interface PartnerCardProps {
   heading?: string;
   imageUrl?: string;
   imageWidth?: string;
-  imageHeight?: string;
 }
 
 const {
@@ -15,13 +15,26 @@ const {
   imageUrl = '',
   heading = '',
   imageWidth = '',
-  imageHeight = '',
 } = Astro.props;
+
+const partnerCardImage = {
+  imageAlt : heading,
+  imageUrl: {
+    mobile: imageUrl
+  },
+  imageWidth: {
+    mobile: imageWidth
+  }
+}
 ---
 
 <div class={`d-flex partner-card ${className}`}>
   <div class="d-flex partner-card-info">
-    <img src={imageUrl} alt={heading} width={imageWidth} height={imageHeight} />
+    <LazyLoadImage
+      imageAlt={partnerCardImage.imageAlt}
+      imageUrl={partnerCardImage.imageUrl}
+      imageWidth={partnerCardImage.imageWidth}
+    />
   </div>
   <div class="partner-card-content">
     <Heading size="sm" className="partner-card-heading">{heading}</Heading>
