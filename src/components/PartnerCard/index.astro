@@ -8,6 +8,7 @@ export interface PartnerCardProps {
   heading?: string;
   imageUrl?: string;
   imageWidth?: string;
+  imageHeight?: string;
 }
 
 const {
@@ -15,6 +16,7 @@ const {
   imageUrl = '',
   heading = '',
   imageWidth = '',
+  imageHeight = ''
 } = Astro.props;
 
 const partnerCardImage = {
@@ -24,6 +26,9 @@ const partnerCardImage = {
   },
   imageWidth: {
     mobile: imageWidth
+  },
+  imageHeight: {
+    mobile: imageHeight
   }
 }
 ---
@@ -34,6 +39,7 @@ const partnerCardImage = {
       imageAlt={partnerCardImage.imageAlt}
       imageUrl={partnerCardImage.imageUrl}
       imageWidth={partnerCardImage.imageWidth}
+      imageHeight={partnerCardImage.imageHeight}
     />
   </div>
   <div class="partner-card-content">
