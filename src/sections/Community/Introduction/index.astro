@@ -1,5 +1,6 @@
 ---
 import Heading from 'components:Heading/index';
+import LazyLoadImage from 'components:LazyLoadImage/index';
 
 // Styles
 import './styles.css';
@@ -7,9 +8,16 @@ import './styles.css';
 
 <div class="community-introduction">
   <div class="community-image">
-    <img
-      src="assets/images/community/introduction.webp"
-      alt="DogeCard community"
+    <LazyLoadImage
+      imageAlt="DogeCard community"
+      imageUrl= {{
+        mobile: "assets/images/community/introduction.webp"
+      }}
+      imageWidth= {{
+        mobile: "150",
+        tablet: "250",
+        desktop: "440"
+      }}
     />
   </div>
   <div class="community-content">
