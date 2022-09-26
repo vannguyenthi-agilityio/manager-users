@@ -6,6 +6,7 @@
 
 .community-content {
   margin-top: 40px;
+  min-height: 110px;
 }
 
 .community-image > picture {
@@ -39,6 +40,8 @@
   }
 
   .community-content {
+    min-height: 153px;
+    width: 56%;
     flex-grow: 2;
     margin-top: unset;
   }
