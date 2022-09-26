@@ -35,6 +35,11 @@
     text-align: start;
   }
 
+  .community-image {
+    width: 44%;
+    min-height: 443px;
+  }
+
   .community-image > picture {
     max-width: 440px;
   }
